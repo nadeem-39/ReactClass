@@ -1,0 +1,19 @@
+.logo{
+    width: 50px;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.header > ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header > ul > li{
+    padding: 10px;
+}
