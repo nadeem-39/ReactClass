@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namaste React</title>
+</head>
+    <body>
+        <div id="root">
+            Not rendered yet
+        </div>
+    
+
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <Script>
+       
+        // const heading = React.createElement(
+        //     "h1",
+        //     { id: "heading", className: "heading" },
+        //     "Namaste React");
+        //  const root = ReactDOM.createRoot(document.getElemnetById("root"));
+        // root.render(heading)
+
+        const heading = React.createElement("h1",{
+            id:"heading",
+            className:"heading",
+            style:{color:"red"}
+        },"Hii Nadeem how are you?");
+        const heading2 = React.createElement("h1",{
+             id:"heading2",
+            className:"heading2",
+            style:{color:"green"}
+        },"Hii Nadeem how are you?");
+        const heading3 = React.createElement("h1",{
+             id:"heading3",
+            className:"heading3",
+            style:{color:"blue"}
+        },"Hii Nadeem how are you?");
+        const heading4 = React.createElement("h1",{
+             id:"heading4",
+            className:"heading4",
+            style:{color:"orange"}
+        },"Hii Nadeem how are you?");
+        const heading5 = React.createElement("h1",{
+             id:"heading5",
+            className:"heading5",
+            style:{color:"black"}
+        },"Hii Nadeem how are you?");
+
+        const allHeading = React.createElement("div",{
+            id:"allHeading",
+            className:"allHeading"
+        },heading,heading2,heading3,heading4,heading5);
+        
+
+        const root = ReactDOM.createRoot(document.getElementById("root"));
+        root.render(allHeading)
+    </Script>
+    </body>
+</html>
